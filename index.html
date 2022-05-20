@@ -45,7 +45,7 @@ function calculateBMI() {
   
         // Dividing as per the bmi conditions
         if (bmi < 18.5) result.innerHTML =
-	    `<span> Abaixo do peso: </span>  <span style="color:yellow">${bmi}</span>`;
+	    `<span> Abaixo do peso: </span>  <span style="color:orange">${bmi}</span>`;
   
         else if (bmi >= 18.5 && bmi < 25.0) 
             result.innerHTML = 
@@ -53,7 +53,7 @@ function calculateBMI() {
   
 	else if (bmi >= 25.0 && bmi < 30.0) 
             result.innerHTML = 
-	    `<span> Sobrepeso : </span> <span style="color:blue">${bmi}</span>`;
+	    `<span> Sobrepeso : </span> <span style="color:magenta">${bmi}</span>`;
 	    
         else result.innerHTML =
             `<span> Obesidade : </span> <span style="color:red">${bmi}</span>`;
