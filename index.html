@@ -44,15 +44,19 @@ function calculateBMI() {
                             / 10000)).toFixed(2);
   
         // Dividing as per the bmi conditions
-        if (bmi < 18.6) result.innerHTML =
+        if (bmi < 18.5) result.innerHTML =
 	    `<span> Abaixo do peso: </span>  <span style="color:yellow">${bmi}</span>`;
   
-        else if (bmi >= 18.6 && bmi < 24.9) 
+        else if (bmi >= 18.5 && bmi < 25.0) 
             result.innerHTML = 
 	    `<span> Normal : </span> <span style="color:blue">${bmi}</span>`;
   
+	else if (bmi >= 25.0 && bmi < 30.0) 
+            result.innerHTML = 
+	    `<span> Sobrepeso : </span> <span style="color:blue">${bmi}</span>`;
+	    
         else result.innerHTML =
-            `<span> Acima do peso : </span> <span style="color:red">${bmi}</span>`;
+            `<span> Obesidade : </span> <span style="color:red">${bmi}</span>`;
 
 
     }
